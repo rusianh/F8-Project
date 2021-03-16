@@ -1,0 +1,6 @@
+:root {  /* !Đặt biến trong css */
+    --text: blue /* *cú pháp "--" + [tên biến] */
+}
+h1 {
+    color:var(--text)
+}
