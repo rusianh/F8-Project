@@ -1,0 +1,7 @@
+/* *Reset CSS */
+* { /* ** để select tất cả các thẻ */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
