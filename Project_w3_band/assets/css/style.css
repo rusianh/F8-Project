@@ -30,29 +30,59 @@ html { /* thẻ co chữ thì kế thừa thôi */
     background-color: black;
 }
 /* ?nav bên trong thằng header nên viết bên dưới thằng header */
-#nav {
+#nav, .subnav {
+    list-style-type: none;
+}
+
+#nav > li {
+    display: inline-block;
 
 }
 
 #nav li {
-    display: inline
+    position: relative;
+}
+
+#nav > li > a {
+    color: white;
+    
 }
 
 #nav li a {
-    color: white;
     text-decoration: none; /* ? khi đặt giá trị của thuộc tính là unset, trình duyệt sẽ sử dụng một trong hai thuộc tính inherit hoặc initial tùy thuộc vào thuộc tính của phần tử cha. Nếu phần tử cha có các thuộc tính đó, nó sẽ kế thừa (inherit) giá trị thuộc tính từ phần tử cha, nếu không có thì unset sẽ sử dụng giá trị mặc định của trình duyệt (initial) */
     line-height: 46px;
     padding: 0 24px;
     display: inline-block;
 }
 
-#nav li:hover a { /* ?hover thẻ li theo kinh nghiệm để không bị mất hover khi trỏ sang thẻ con */
+#nav li:hover .subnav {
+    display: block;
+}
+
+#nav .subnav li:hover a,
+#nav > li:hover > a { /* ?hover thẻ li theo kinh nghiệm để không bị mất hover khi trỏ sang thẻ con */
     color: black;
     background-color: #ccc;
 }
 
+
 #nav .subnav {
     display: none; /* ?ẩn đi */
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    background-color: white;
+    box-shadow: 0 0 10px black;
+}
+
+#nav .subnav li {
+    
+}
+
+#nav .subnav a {
+    color: black;
+    display: block;
+    padding-left: 12px;
 }
 
 #slider {
