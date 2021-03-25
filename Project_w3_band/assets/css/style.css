@@ -56,7 +56,8 @@ html { /* thẻ co chữ thì kế thừa thôi */
 }
 
 #slider {
-
+    min-height: 500px;
+    background-color: beige;
 }
 
 #content {
