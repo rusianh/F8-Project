@@ -5,3 +5,64 @@
     box-sizing: border-box;
 }
 
+html { /* thẻ co chữ thì kế thừa thôi */
+    font-family: Arial, Helvetica, sans-serif;/* lần lượt thử các font nào có thì dùng */
+}
+
+/* 
+* 1. Từ ngoài vào trong
+* 2. Từ trên xuống dưới
+* 3. Tổng quan đến chi tiết
+*/
+
+/* 
+* 1.Vị trí
+* 2.Kích thước (with, height)
+* 3.Màu sắc
+* 4.Kiểu dáng (Kiểu chữ, hình tròn, hình vuông)
+ */
+#main {
+
+}
+
+#header {
+    height: 46px;
+    background-color: black;
+}
+/* ?nav bên trong thằng header nên viết bên dưới thằng header */
+#nav {
+
+}
+
+#nav li {
+    display: inline
+}
+
+#nav li a {
+    color: white;
+    text-decoration: none; /* ? khi đặt giá trị của thuộc tính là unset, trình duyệt sẽ sử dụng một trong hai thuộc tính inherit hoặc initial tùy thuộc vào thuộc tính của phần tử cha. Nếu phần tử cha có các thuộc tính đó, nó sẽ kế thừa (inherit) giá trị thuộc tính từ phần tử cha, nếu không có thì unset sẽ sử dụng giá trị mặc định của trình duyệt (initial) */
+    line-height: 46px;
+    padding: 0 24px;
+    display: inline-block;
+}
+
+#nav li:hover a { /* ?hover thẻ li theo kinh nghiệm để không bị mất hover khi trỏ sang thẻ con */
+    color: black;
+    background-color: #ccc;
+}
+
+#nav .subnav {
+    display: none; /* ?ẩn đi */
+}
+
+#slider {
+
+}
+
+#content {
+
+}
+
+#footer {
+
+}

@@ -1,0 +1,65 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+/* 
+* 1.Vị trí
+* 2.Kích thước (with, height)
+* 3.Màu sắc
+* 4.Kiểu dáng (Kiểu chữ, hình tròn, hình vuông)
+ */
+#main {
+
+} 
+
+#header {
+    height: 46px;
+    background-color: #000;
+}
+
+#nav {
+
+}
+
+#nav li {
+    display: inline;
+}
+
+#nav li a {
+    color: white;
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0px 24px;
+    display: inline-block;
+}
+
+#nav li:hover a {
+    color: #000;
+    background-color: #ccc;
+}
+
+#nav .subnav {
+    display: none;
+}
+
+#subnav {
+
+}
+
+#slider {
+
+}
+
+#content {
+
+}
+
+#footer {
+
+}
