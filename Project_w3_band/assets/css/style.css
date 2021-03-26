@@ -28,6 +28,10 @@ html { /* thẻ co chữ thì kế thừa thôi */
 #header {
     height: 46px;
     background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 #header .search-btn {
@@ -112,8 +116,12 @@ html { /* thẻ co chữ thì kế thừa thôi */
 }
 
 #slider {
-    min-height: 500px;
-    background-color: beige;
+    /* min-height: 2000px;
+    background-color: beige; */
+    position: relative;
+    margin-top: 46px;
+    padding-top: 50%; /* % khác với px: padding top 50% chiều ngang của chính */
+    background: url("/Project_w3_band/assets/img/slider/slider1.jpg") top center / cover; /* ?cách viết gộp sau phần gạch chéo là back groud size. top với cen ter viết tắt cho attribute position */
 }
 
 #content {
