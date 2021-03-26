@@ -29,6 +29,28 @@ html { /* thẻ co chữ thì kế thừa thôi */
     height: 46px;
     background-color: black;
 }
+
+#header .search-btn {
+    float: right;
+    padding: 0 21px;
+    cursor: pointer;
+}
+
+#header .search-btn:hover {
+    background-color: red;
+}
+
+#header .search-icon {
+    color: white;
+    line-height: 46px;
+    
+}
+
+#nav {
+    display: inline-block;
+
+}
+
 /* ?nav bên trong thằng header nên viết bên dưới thằng header */
 #nav, .subnav {
     list-style-type: none;
@@ -83,6 +105,10 @@ html { /* thẻ co chữ thì kế thừa thôi */
     color: black;
     display: block;
     padding-left: 12px;
+}
+
+#nav .nav-arrow-down {
+    font-size: 12px;
 }
 
 #slider {
