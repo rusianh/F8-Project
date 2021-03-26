@@ -32,6 +32,7 @@ html { /* thẻ co chữ thì kế thừa thôi */
     top: 0;
     left: 0;
     right: 0;
+    z-index: 1; /* ?tăng độ sau của ảnh trục z, fix lỗi ảnh slide nổi trên navigation  */
 }
 
 #header .search-btn {
@@ -120,12 +121,37 @@ html { /* thẻ co chữ thì kế thừa thôi */
     background-color: beige; */
     position: relative;
     margin-top: 46px;
-    padding-top: 50%; /* % khác với px: padding top 50% chiều ngang của chính */
+    padding-top: 50%; /* ?% khác với px: padding top 50% chiều ngang của chính */
     background: url("/Project_w3_band/assets/img/slider/slider1.jpg") top center / cover; /* ?cách viết gộp sau phần gạch chéo là back groud size. top với cen ter viết tắt cho attribute position */
+    /* ?xem lại cách viết nhanh trong bài 21-24 background */
 }
 
-#content {
+#slider .text-content {
+    position: absolute;
+    bottom: 48px;
+    color: white;
+    left: 50%; /* ?Cách bằng 1/2 with */
+    transform: translateX(-50%); /* ?xem các cách ở phần html css tips */
+    /* *right = 0 c1
+        left = 0 c1
+        with = 100% c2 */
+    text-align: center;
+}
 
+#slider .text-heading {
+    font-weight: 500px;
+    font-size: 24px;
+}
+
+#slider .text-decription {
+    font-size: 15px;
+    margin-top: 25px;
+}
+
+
+#content {
+    min-height: 500px;
+    background-color: bisque;
 }
 
 #footer {
