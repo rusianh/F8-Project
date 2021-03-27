@@ -9,6 +9,10 @@ html { /* thẻ co chữ thì kế thừa thôi */
     font-family: Arial, Helvetica, sans-serif;/* lần lượt thử các font nào có thì dùng */
 }
 
+.clear-float {
+    clear: both;
+}
+
 /* 
 * 1. Từ ngoài vào trong
 * 2. Từ trên xuống dưới
@@ -179,6 +183,29 @@ html { /* thẻ co chữ thì kế thừa thôi */
     margin-top: 25px;
     text-align: justify; /* ?justify căn đều 2 lề trái phải */
     line-height: 1.4;/* ?chỉnh độ cao 1 dòng (tiếng anh 1.4, tiếng việt: 1.6) */
+
+}
+
+#content .member-list {
+    margin-top: 48px;
+    text-align: center; /* ?text-align: để sắp xếp nội dung theo chiều ngang */
+    /* !overflow: hidden; */ /*Dùng thuộc tính này để thằng cha ôm 3 thằng con có thuộc tính float vẫn có thể ôm trọn 3 thằng con | Thực tế người ta hay dùng clearfloat đặt ngay sau thằng con cuối  */
+}
+
+#content .member-item {/* ?Đặt tên css:luôn đi từ thằng cha ( đi 2-3 cấp thôi) */
+    float: left;
+    /* width: 33.33333%;  *//* ? dùng float ==> 3 item cộng lại cho bằng 100%  */
+    width: calc(100%/3);
+}
+
+#content .member-name {
+
+}
+
+#content .member-img {
+    width: 154px; /* ?Đặt width thì ảnh height tự động đc chỉnh và ngược lại */
+    margin-top: 15px;
+    border-radius: 5px;
 }
 
 #footer {
