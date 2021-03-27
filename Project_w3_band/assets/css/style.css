@@ -154,6 +154,33 @@ html { /* thẻ co chữ thì kế thừa thôi */
     background-color: bisque;
 }
 
+#content .content-section {
+    width: 800px;
+    padding: 64px 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#content .section-heading {
+    font-size: 15px;
+    text-align: center; /* ?căn text ra giữa */
+    font-weight: 500; /* ?cho chữ mỏng đi */
+    letter-spacing: 4px; /* ?khoảng cách chữ cais */
+}
+
+#content .section-sub-heading {
+    text-align: center;
+    margin-top: 25px;
+    font-style: italic; /* ?kiểu chữ */
+    opacity: 0.6; /* ?độ mờ của chữ */
+}
+
+#content .about-text {
+    margin-top: 25px;
+    text-align: justify; /* ?justify căn đều 2 lề trái phải */
+    line-height: 1.4;/* ?chỉnh độ cao 1 dòng (tiếng anh 1.4, tiếng việt: 1.6) */
+}
+
 #footer {
 
 }
