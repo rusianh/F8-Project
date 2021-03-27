@@ -13,6 +13,9 @@ html { /* thẻ co chữ thì kế thừa thôi */
     clear: both;
 }
 
+.text-white {
+    color: white !important;
+}
 /* 
 * 1. Từ ngoài vào trong
 * 2. Từ trên xuống dưới
@@ -207,6 +210,49 @@ html { /* thẻ co chữ thì kế thừa thôi */
     margin-top: 15px;
     border-radius: 5px;
 }
+
+/* tour section */
+
+.tour-section {
+    background-color: black;
+}
+
+.ticket-list {
+    margin-top: 40px;
+    list-style: none; /* ?Bỏ giấu chấm của thẻ li */
+    background-color: white;
+}
+
+.ticket-list li {
+    color: #757575;
+    font-size: 15px; /* set fontsize trước rồi padding */
+    padding: 11px 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+.ticket-list .sold-out {
+    background-color: #f44336; 
+    color: #fff;
+    padding: 3px 4px;
+    margin-left: 8px;
+
+}
+
+.ticket-list .quantity {
+    float: right;
+    width: 24px;
+    height: 24px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center; /* ?center: căn giữa từ trái sang phải theo chiều ngang */
+    line-height: 24px; /* ?căn giữa từ trên xuống dưới */
+    /* ?vì line height 24px > thằng li nên bị lệch xuống dưới */
+    margin-top: -3px; /* ?Một thẻ đang có tính chất inline mà thêm float thành thẻ block => mới đặt được with height, margin */
+    
+}
+
+/* footer-section */
 
 #footer {
 

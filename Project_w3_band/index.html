@@ -71,10 +71,18 @@
             </div>
 
             <!-- !Tour section -->
-            <div class="content-section">
-                <h2 class="section-heading">TOUR DATE</h2>
-                <p class="section-sub-heading">Remember to book your ticket</p>
-           
+            <!-- ?Backgroud chỉ tính từ phần padding + content còn phần margin không tạo đc ==> tạo một thằng cha div ôm phần tour và đổ màu nền cho nó -->
+            <div class="tour-section">
+                <div class="content-section">
+                    <h2 class="section-heading text-white">TOUR DATE</h2>
+                    <p class="section-sub-heading text-white">Remember to book your ticket</p>
+                    
+                    <ul class="ticket-list">
+                        <li>September <span class="sold-out">Sold out</span></li>
+                        <li>Octobor <span class="sold-out">Sold out</span></li>
+                        <li>November <span class="quantity">3</span></li>
+                    </ul>
+                </div>
             </div>
 
             <!-- !Contact section -->
