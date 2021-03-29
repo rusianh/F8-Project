@@ -252,8 +252,48 @@ html { /* thẻ co chữ thì kế thừa thôi */
     
 }
 
+/* place */
+.place-list {
+    margin: 32px -8px 0px;
+}
+
+.place-item {
+    float: left;
+    width: 33.33333%; /* ?vì ảnh kích cỡ to hơn with nên muốn cho nổi cùng 1 dòng thì dùng như vậy */
+}
+
+.place-img {
+    width: 100%; /* ?vì ảnh img to hơn ảnh chứa nó: set with 100% = thẻ chứa nó */
+    padding: 0 8px;
+}
+
+.place-img:hover{
+    opacity: 0.6;
+}
+
+.place-body {
+
+}
+
+.place-heading {
+
+}
+
+.place-time {
+
+}
+
+.place-description {
+
+}
+
+.place-buy-btn {
+
+}
+
 /* footer-section */
 
 #footer {
 
 }
+ 
