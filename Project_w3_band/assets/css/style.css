@@ -254,7 +254,7 @@ html { /* thẻ co chữ thì kế thừa thôi */
 
 /* place */
 .place-list {
-    margin: 32px -8px 0px;
+    margin: 32px -8px 48px;
 }
 
 .place-item {
@@ -265,6 +265,7 @@ html { /* thẻ co chữ thì kế thừa thôi */
 .place-img {
     width: 100%; /* ?vì ảnh img to hơn ảnh chứa nó: set with 100% = thẻ chứa nó */
     padding: 0 8px;
+    display: block; /* ?img đang có tính chất inline: bị khoảng hở đen | Thường xảy xa khi trong phần tử có 1 thằng inline đứng gần thằng block */
 }
 
 .place-img:hover{
@@ -272,23 +273,39 @@ html { /* thẻ co chữ thì kế thừa thôi */
 }
 
 .place-body {
-
+    background-color: #fff;
+    margin: 0 8px;
+    padding: 16px;
+    font-size: 15px;
 }
 
 .place-heading {
-
+    font-size: 15px;
+    font-weight: 600;
 }
 
 .place-time {
-
+    margin-top: 15px;
+    color: #757575;
 }
 
 .place-description {
-
+    margin-top: 15px;
+    line-height: 1.4; /* ?tiếng anh line height1.6, tiếng việt line-height: 1.4; */
 }
 
 .place-buy-btn {
+    color: #fff;
+    background-color: black;
+    text-decoration: none;
+    padding: 11px 16px;
+    display: inline-block;
+    margin: 15px 0 0;
+}
 
+.place-buy-btn:hover {
+    background-color: #ccc;
+    color: #000;
 }
 
 /* footer-section */
