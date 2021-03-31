@@ -84,8 +84,8 @@
                         <li>November <span class="quantity">3</span></li>
                     </ul>
                     <!-- !Places -->
-                    <div class="place-list">
-                        <div class="place-item">
+                    <div class="row place-list">
+                        <div class="col col-third place-item">
                             <img src="./assets/img/city/newyork.jpg" alt="" class="place-img">
                             <div class="place-body">
                                 <h3 class="place-heading">New York</h3>
@@ -94,7 +94,7 @@
                                 <a href="#" class="place-buy-btn">Buy Tickets</a>
                             </div>
                         </div>
-                        <div class="place-item">
+                        <div class="col col-third place-item">
                             <img src="./assets/img/city/paris.jpg" alt="" class="place-img">
                             <div class="place-body">
                                 <h3 class="place-heading">Pais</h3>
@@ -103,7 +103,7 @@
                                 <a href="#" class="place-buy-btn">Buy Tickets</a>
                             </div>
                         </div>
-                        <div class="place-item">
+                        <div class="col col-third place-item">
                             <img src="./assets/img/city/sanfran.jpg" alt="" class="place-img">
                             <div class="place-body">
                                 <h3 class="place-heading">San Francisco</h3>
@@ -120,7 +120,33 @@
             <!-- !Contact section -->
             <div class="content-section">
                 <h2 class="section-heading">CONTACT</h2>
-                <p class="section-sub-heading">Fan? Drop a note!                </p>
+                <p class="section-sub-heading">Fan? Drop a note!</p>
+                <div class="row contact-content">
+                    <div class="col col-half contact-info">
+                        <p><i class="ti-location-pin"></i>Chicago, US</p>
+                        <p><i class="ti-mobile"></i>Phone: +00 151515</p>
+                        <p><i class="ti-email"></i>Email: mail@mail.com</p>
+                    </div>
+                    <div class="col col-half contact-form">
+                        <form action="">
+                            <div class="row">
+                                <div class="col col-half ">
+                                    <input type="text" name="" id="" class="form-control" placeholder="Name">
+                                </div>
+                                <div class="col col-half">
+                                    <input type="email" name="" id="" class="form-control" placeholder="Email">
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="row">
+                                <div class="col col-full">
+                                    <input type="text" name="" id="" class="form-control" placeholder="Message">
+                                </div>
+                            </div>
+                            <input type="submit" value="SEND">
+                        </form>
+                    </div>
+                </div>
             </div>
 
         </div>

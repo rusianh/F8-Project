@@ -13,9 +13,6 @@ html { /* thẻ co chữ thì kế thừa thôi */
     clear: both;
 }
 
-.text-white {
-    color: white !important;
-}
 /* 
 * 1. Từ ngoài vào trong
 * 2. Từ trên xuống dưới
@@ -27,7 +24,40 @@ html { /* thẻ co chữ thì kế thừa thôi */
 * 2.Kích thước (with, height)
 * 3.Màu sắc
 * 4.Kiểu dáng (Kiểu chữ, hình tròn, hình vuông)
- */
+*/
+
+/* Common */
+
+.text-white {
+    color: white !important;
+}
+ .text-center {
+     text-align: center !important; 
+ }
+
+ .row {
+     margin-left: -8px;
+     margin-right: -8px;
+ }
+
+ .col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-full {
+    width: 100%;
+}
+
+ .col-third {
+    width: 33.33333333%;
+}
+
+.col-half {
+    width: 50%;
+}
+
 #main {
 
 }
@@ -254,17 +284,19 @@ html { /* thẻ co chữ thì kế thừa thôi */
 
 /* place */
 .place-list {
-    margin: 32px -8px 48px;
+    margin-top: 32px;
+    margin-bottom: 48px;
 }
 
 .place-item {
-    float: left;
-    width: 33.33333%; /* ?vì ảnh kích cỡ to hơn with nên muốn cho nổi cùng 1 dòng thì dùng như vậy */
+    /* float: left; */
+    /* width: 33.33333%; */ /* ?vì ảnh kích cỡ to hơn with nên muốn cho nổi cùng 1 dòng thì dùng như vậy */
 }
 
 .place-img {
     width: 100%; /* ?vì ảnh img to hơn ảnh chứa nó: set with 100% = thẻ chứa nó */
     padding: 0 8px;
+
     display: block; /* ?img đang có tính chất inline: bị khoảng hở đen | Thường xảy xa khi trong phần tử có 1 thằng inline đứng gần thằng block */
 }
 
@@ -308,7 +340,33 @@ html { /* thẻ co chữ thì kế thừa thôi */
     color: #000;
 }
 
-/* footer-section */
+/* *Contact form */
+
+.contact-content {
+    margin-top: 46px;
+}
+
+.contact-info {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.contact-info i[class*="ti-"] {  /* ?css selector nâng cao thẻ i có class chứa "ti-" | i[class*="ti-"] */
+ width: 34px;
+ display: inline-block;
+}
+
+.contact-form{
+    font-size: 15px;
+}
+
+.contact-form .form-control{
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+/* *footer-section */
 
 #footer {
 
