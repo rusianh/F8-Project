@@ -35,18 +35,22 @@ html { /* thẻ co chữ thì kế thừa thôi */
      text-align: center !important; 
  }
 
- .row {
+.pull-right {
+    float: right;
+}
+
+.row {
      margin-left: -8px;
      margin-right: -8px;
  }
 
- .row::after {
+.row::after {
      content: "";
      display: block;
      clear :both;
- }
+}
 
- .col {
+.col {
     float: left;
     padding-left: 8px;
     padding-right: 8px;
@@ -202,7 +206,7 @@ html { /* thẻ co chữ thì kế thừa thôi */
 
 #content {
     min-height: 500px;
-    background-color: bisque;
+    background-color: #fff;
 }
 
 #content .content-section {
@@ -390,9 +394,45 @@ html { /* thẻ co chữ thì kế thừa thôi */
 
 }
 
+/* *map */
+.map-section img {
+    width: 100%;
+    
+}
+
 /* *footer-section */
 
 #footer {
+padding: 64px 16px;
+text-align: center;
 
 }
- 
+
+#footer .social-list {
+    font-size: 20px;
+}
+
+#footer .social-list a {
+    color: rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+}
+#footer .copyright a:hover ,
+#footer .social-list a:hover {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+#footer .copyright  {
+    margin-top: 15px;
+    color: rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+
+}
+
+#footer .copyright a {
+    text-decoration: none;
+    color: #000;
+}
+
+#footer .copyright {
+    color: rgba(0, 0, 0, 0.4);
+}
